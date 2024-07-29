@@ -55,6 +55,12 @@ h2 {
     display: flex;
     align-items: center; /* Alinha o conteúdo verticalmente ao centro */
 }
+.profile-container p {
+    font-size: 18px; /* Tamanho da fonte */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin: 0;
+    color: #333;
+}
 
 .foto-perfil {
     width: 200px; /* Altere para o tamanho desejado */
@@ -201,6 +207,36 @@ h2 {
 }
 
 .technologies li i {
+    color: #333; /* Cor padrão, você pode personalizar isso se necessário */
+}
+
+.technologies1 {
+    padding: 20px;
+}
+
+.technologies1 h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.technologies1 ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    display: flex; /* Usa flexbox para o layout */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    gap: 25px 60px; /* Espaçamento vertical de 20px e horizontal de 10px */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.technologies1 li {
+    font-size: 34px; /* Tamanho dos ícones */
+    margin: 0; /* Remove margens padrão */
+    text-align: center; /* Centraliza os ícones dentro dos itens da lista */
+    flex: 1 1 calc(25% - 20px); /* Ajusta os itens para ocupar 25% do container menos o espaçamento */
+    box-sizing: border-box; /* Inclui padding e border na largura total do item */
+}
+
+.technologies1 li i {
     color: #333; /* Cor padrão, você pode personalizar isso se necessário */
 }
 
