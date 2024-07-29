@@ -1,0 +1,250 @@
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0;
+    padding-bottom: 50px; /* Adiciona espaço no fundo da página para o footer */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 10px 0; /* Adiciona padding superior e inferior */
+    position: relative; /* Garante que o footer seja posicionado relativamente ao fluxo do documento */
+    bottom: 0; /* Alinha o footer na parte inferior do contêiner */
+    width: 100%; /* Faz o footer ocupar toda a largura da tela */
+}
+
+h2 {
+    text-align: center; /* Centraliza o texto dentro do elemento h2 */
+    margin: 20px 0; /* Adiciona margem superior e inferior para espaçamento */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+}
+
+.foto-perfil {
+    width: 200px; /* Altere para o tamanho desejado */
+    height: auto;
+    border-radius: 50%; /* Faz a imagem ficar circular */
+    margin-right: 20px; /* Adiciona uma margem à direita da imagem para separar do texto */
+}
+
+.social-icons {
+    margin-top: 20px; /* Adiciona um espaçamento acima dos ícones */
+    text-align: left; /* Alinha os ícones à esquerda */
+    margin-left: 40px; /* Margem à esquerda */
+}
+
+.social-icons a {
+    color: #333; /* Cor dos ícones */
+    font-size: 34px; /* Tamanho dos ícones */
+    margin: 0 10px; /* Margem horizontal entre os ícones */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Cor ao passar o mouse sobre os ícones */
+}
+
+/* Estilos para a seção de projetos */
+#projects {
+    margin-bottom: 40px; /* Espaçamento adicional entre seções */
+}
+
+.imagens {
+    text-align: center; /* Centraliza o texto */
+}
+
+.project {
+    display: flex;           /* Usa flexbox para alinhar horizontalmente */
+    flex-wrap: wrap;         /* Permite quebra de linha em telas menores */
+    justify-content: space-between; /* Distribui espaço entre os itens */
+    align-items: flex-start; /* Alinha itens no topo */
+    margin-bottom: 30px;     /* Espaçamento entre os projetos */
+    border: 1px solid #ddd;  /* Adiciona borda ao redor do projeto */
+    padding: 20px;           /* Espaçamento interno do projeto */
+    border-radius: 8px;      /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Cor de fundo do projeto */
+}
+
+.project-info,
+.project-carousel,
+.project-tech {
+    flex: 1; /* Distribui igualmente o espaço entre as colunas */
+    padding: 10px; /* Espaçamento interno das colunas */
+}
+
+.project-info {
+    min-width: 200px; /* Largura mínima para garantir espaço para texto */
+}
+
+.project-tech {
+    min-width: 200px; /* Largura mínima para garantir espaço para ícones */
+}
+
+.project-carousel {
+    max-width: 600px; /* Largura máxima do carrossel */
+}
+
+.project-carousel .swiper-slide img {
+    max-width: 100%; /* Ajusta a imagem para o tamanho do slide */
+    max-height: 200px; /* Ajusta a altura máxima da imagem */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+    border-radius: 8px; /* Bordas arredondadas para as imagens */
+    display: block;
+    margin: 0 auto;
+}
+
+.project-tech ul {
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0; /* Remove padding padrão */
+}
+
+.project-tech li {
+    display: flex; /* Alinha ícones e texto horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-bottom: 8px; /* Espaçamento entre os itens */
+}
+
+.project-tech i {
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+    font-size: 24px; /* Tamanho dos ícones */
+    color: #007bff; /* Cor dos ícones */
+}
+/* Estilos adicionais para o carrossel */
+.swiper-container {
+    width: 100%;         /* Usa a largura total do container */
+    max-width: 800px;    /* Define uma largura máxima */
+    margin: 0 auto;      /* Centraliza o carrossel */
+    position: relative;  /* Permite posicionamento absoluto das setas */
+    padding: 20px 0;     /* Espaçamento ao redor do carrossel */
+    overflow: hidden;    /* Oculta as imagens que saem do container */
+}
+
+.swiper-wrapper {
+    display: flex;       /* Alinha os slides em linha */
+    transition: transform 0.3s ease; /* Suaviza a transição entre slides */
+}
+
+.swiper-slide {
+    width: 100%;         /* Cada slide ocupa 100% do container */
+    display: flex;       /* Permite alinhar as imagens no centro do slide */
+    justify-content: center; /* Centraliza a imagem no slide */
+    align-items: center; /* Alinha a imagem verticalmente */
+}
+
+.swiper-slide img {
+    max-width: 100%;    /* Ajusta a largura da imagem ao slide */
+    max-height: 300px; /* Limita a altura máxima */
+    object-fit: cover; /* Ajusta a imagem para preencher o slide */
+    border-radius: 8px; /* Adiciona bordas arredondadas às imagens */
+}
+
+.technologies {
+    padding: 20px;
+}
+
+.technologies h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.technologies ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    display: flex; /* Usa flexbox para o layout */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    gap: 25px 8px; /* Espaçamento vertical de 20px e horizontal de 10px */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.technologies li {
+    font-size: 34px; /* Tamanho dos ícones */
+    margin: 0; /* Remove margens padrão */
+    text-align: center; /* Centraliza os ícones dentro dos itens da lista */
+    flex: 1 1 calc(25% - 20px); /* Ajusta os itens para ocupar 25% do container menos o espaçamento */
+    box-sizing: border-box; /* Inclui padding e border na largura total do item */
+}
+
+.technologies li i {
+    color: #333; /* Cor padrão, você pode personalizar isso se necessário */
+}
+
+/* Estilos individuais para as cores dos ícones */
+.fa-java {
+    color: #007396; /* Azul escuro */
+}
+
+.fa-cogs {
+    color: #6D6D6D; /* Cinza */
+}
+
+.fa-server {
+    color: #2C3E50; /* Azul escuro */
+}
+
+.fa-angular {
+    color: #E94E32; /* Laranja vermelhado */
+}
+
+.fa-js-square {
+    color: #F7DF1E; /* Amarelo */
+}
+
+.fa-css3-alt {
+    color: #1572B6; /* Azul CSS */
+}
+
+.fa-html5 {
+    color: #E34F26; /* Laranja HTML */
+}
+
+.fa-user-check {
+    color: #4CAF50; /* Verde */
+}
+
+.fa-map-marked-alt {
+    color: #00853F; /* Verde escuro */
+}
+
+.fa-database {
+    color: #5C6BC0; /* Azul claro */
+}
+
+.fa-aws {
+    color: #FF9900; /* Laranja AWS */
+}

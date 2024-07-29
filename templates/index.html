@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <div class="profile-container">
+                <img src="{{ url_for('static', filename='img/Foto_perfil.jpg') }}" alt="Minha Foto" class="foto-perfil">
+                <p>
+                    Destaco meu portfólio no GitHub, onde compartilho projetos relacionados aos meus estudos. Você pode
+                    explorar meu trabalho aqui: <a
+                        href="https://github.com/BrianFagundes">https://github.com/BrianFagundes</a>
+
+                    Atualmente, desempenho o papel de Analista de TI na Maxior Joias, focando no desenvolvimento e
+                    implementação de soluções tecnológicas inovadoras. Minha expertise reside na automação de tarefas,
+                    integração com sistemas externos, otimização do ERP e na análise contínua da infraestrutura para
+                    impulsionar a eficiência operacional.
+                </p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/brian-fagundes-130826192/" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/BrianFagundes" target="_blank" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div class="project">
+                <div class="project-info">
+                    <h3>SCORE (TCC ADS)</h3>
+                    <p>O escopo deste projeto é a criação de um website voltado para praticantes esportivos, independentemente de sua experiência, proporcionando uma plataforma que não só permite o planejamento e a participação em eventos coletivos de forma equitativa, 
+                        mas também enfatiza a valorização da diversidade e da experiência coletiva no universo esportivo. Além da avaliação sigilosa das habilidades dos participantes, o sistema se destaca pela facilitação da organização de atividades esportivas por meio de uma interface de fácil utilização. 
+                        O objetivo principal é estabelecer uma plataforma inclusiva que transcenda a competição, proporcionando um ambiente onde todos os praticantes possam desfrutar do prazer da prática esportiva em conjunto.</p>
+                </div>
+
+                <!-- Carrossel de Fotos -->
+                <div class="project-carousel swiper-container">
+                    <h3 class="imagens">Imagens</h3>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{{ url_for('static', filename='img/score/Tela-login.jpg') }}" alt="Foto 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ url_for('static', filename='img/score/Tela-home.jpg') }}" alt="Foto 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ url_for('static', filename='img/score/Tela-GerenciamentoEquipe.jpg') }}"
+                                alt="Foto 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ url_for('static', filename='img/score/Tela-AlterarEquipe.jpg') }}"
+                                alt="Foto 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ url_for('static', filename='img/score/Tela-AlterarEvento.jpg') }}"
+                                alt="Foto 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ url_for('static', filename='img/score/Tela-IntegracapMaps.jpg') }}"
+                                alt="Foto 6">
+                        </div>
+                    </div>
+
+                    <!-- Adicionar Paginação -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Adicionar Navegação -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <div class="technologies">
+                    <h4>Tecnologias Usadas</h4><br>
+                    <ul>
+                        <li class="fab fa-java"></li>
+                        <li class="fab fa-angular"></li>
+                        <li class="fab fa-js-square"></li>
+                        <li class="fab fa-css3-alt"></li>
+                        <li class="fab fa-html5"></li>
+                        <li class="fas fa-map-marked-alt"></li>
+                        <li class="fas fa-database"></li>
+                        <li class="fab fa-aws"></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <!-- Repetir para cada projeto -->
+            <div class="project">
+                <div class="project-info">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição curta do Projeto 2.</p>
+                </div>
+                <div class="project-carousel swiper-container">
+                    <!-- Slides do carrossel do Projeto 2 -->
+                </div>
+                <div class="project-tech">
+                    <h4>Tecnologias Usadas</h4>
+                    <ul>
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                        <!-- Adicione mais ícones conforme necessário -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Adicione mais projetos conforme necessário -->
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Email: brian_moura@outlook.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Brian Fagundes de Moura</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Inicializar Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 1, // Exibe apenas um slide por vez
+            centeredSlides: true, // Centraliza o slide ativo
+            spaceBetween: 30, // Espaçamento entre os slides, ajuste conforme necessário
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+</body>
+
+</html>
