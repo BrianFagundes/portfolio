@@ -8,4 +8,4 @@ def home():
 
 if __name__ == '__main__':
     # Executa a aplicação na porta 8080 e permite acesso externo
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='0.0.0.0', port=8181, debug=True)
