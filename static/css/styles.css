@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0; /* Remove margens padrão do body */
     padding: 0;
-    padding-bottom: 50px; /* Adiciona espaço no fundo da página para o footer */
+    padding-bottom: 0px; /* Adiciona espaço no fundo da página para o footer */
 }
 
 header {
@@ -40,7 +40,7 @@ footer {
     background-color: #333; /* Cor de fundo */
     color: white; /* Cor do texto */
     text-align: center; /* Centraliza o texto no rodapé */
-    padding: 10px 0; /* Adiciona padding superior e inferior */
+    padding: 10px 0px; /* Adiciona padding superior e inferior */
     position: relative; /* Garante que o footer seja posicionado relativamente ao fluxo do documento */
     bottom: 0; /* Alinha o footer na parte inferior do contêiner */
     width: 100%; /* Faz o footer ocupar toda a largura da tela */
